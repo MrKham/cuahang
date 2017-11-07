@@ -1,0 +1,9 @@
+<% @items.each do |i| %>
+<div class ="box-item">
+  <div class = "floating-box">
+    <%= image_tag i.image.url if i.image? %>
+  </div>
+  <%= i.name %>
+  <%= i.price %>
+</div>
+<% end %>
