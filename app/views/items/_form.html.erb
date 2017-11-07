@@ -22,8 +22,7 @@
   </div>
 
   <div class="field">
-    <%= form.label :image %>
-    <%= form.text_field :image, id: :item_image %>
+    <%= form.file_field :image, accept: 'image/jpeg,image/gif,image/png' %>
   </div>
 
   <div class="actions">
